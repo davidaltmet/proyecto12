@@ -16,6 +16,18 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <title>Proyecto 12</title>
   </head>
@@ -111,9 +123,11 @@
       <div class="section3_title">
         <h1>What they’ve said</h1>
       </div>
-      <div class="section3_info">
+      <div class="section3_info" id="section3_info">
         <div class="section3_person person1">
-          <img src="./images/avatar-anisha.png" />
+          <div class="person_img">
+            <img src="./images/avatar-anisha.png" />
+          </div>
           <h4 class="person_nom">Anisha Li</h4>
           <p class="person_paragraph">
             “Manage has supercharged our team’s workflow. The ability to
@@ -122,7 +136,9 @@
           </p>
         </div>
         <div class="section3_person person2">
-          <img src="./images/avatar-ali.png" />
+          <div class="person_img">
+            <img src="./images/avatar-ali.png" />
+          </div>
           <h4 class="person_nom">Ali Bravo</h4>
           <p class="person_paragraph">
             “We have been able to cancel so many other subscriptions since using
@@ -131,7 +147,9 @@
           </p>
         </div>
         <div class="section3_person person3">
-          <img src="./images/avatar-richard.png" />
+          <div class="person_img">
+            <img src="./images/avatar-richard.png" />
+          </div>
           <h4 class="person_nom">Richard Watts</h4>
           <p class="person_paragraph">
             “Manage allows us to provide structure and process. It keeps us
@@ -140,7 +158,9 @@
           </p>
         </div>
         <div class="section3_person person4">
-          <img src="./images/avatar-shanai.png" />
+          <div class="person_img">
+            <img src="./images/avatar-shanai.png" />
+          </div>
           <h4 class="person_nom">Richard Watts</h4>
           <p class="person_paragraph">
             “Their software allows us to track, manage and collaborate on our
@@ -149,8 +169,8 @@
           </p>
         </div>
       </div>
-      <div class="items_persons">
-        <span class="item_person item_person1"></span>
+      <div class="items_persons" id="items_persons">
+        <span class="item_person item_person1 active"></span>
         <span class="item_person item_person2"></span>
         <span class="item_person item_person3"></span>
         <span class="item_person item_person4"></span>
@@ -244,5 +264,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

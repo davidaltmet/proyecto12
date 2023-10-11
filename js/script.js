@@ -48,74 +48,65 @@ barraMobile.addEventListener("click", function () {
   }
 });
 
-function setupPersons() {
-  let personsItems = document.querySelectorAll(".item_person");
-  let algunoSelec = false;
+// function setupPersons() {
+//   let personsItems = document.querySelectorAll(".item_person");
+//   let algunoSelec = false;
 
-  personsItems[0].classList.add("fecto_item_person");
+//   personsItems[0].classList.add("fecto_item_person");
 
-  for (let i = 0; i < personsItems.length; i++) {
-    personsItems[i].addEventListener("click", function () {
-      if (algunoSelec == false) {
-        for (let n = 0; n < personsItems.length; n++) {
-          personsItems[n].classList.toggle(
-            "fecto_item_person",
-            personsItems[n] == this
-          );
-        }
-      }
-    });
-  }
+//   for (let i = 0; i < personsItems.length; i++) {
+//     personsItems[i].addEventListener("click", function () {
+//       if (algunoSelec == false) {
+//         for (let n = 0; n < personsItems.length; n++) {
+//           personsItems[n].classList.toggle(
+//             "fecto_item_person",
+//             personsItems[n] == this
+//           );
+//         }
+//       }
+//     });
+//   }
 
-  let person1 = document.querySelector(".person1");
-  let person2 = document.querySelector(".person2");
-  let person3 = document.querySelector(".person3");
-  let person4 = document.querySelector(".person4");
-  let item_person1 = document.querySelector(".item_person1");
-  let item_person2 = document.querySelector(".item_person2");
-  let item_person3 = document.querySelector(".item_person3");
-  let item_person4 = document.querySelector(".item_person4");
+//   let person1 = document.querySelector(".person1");
+//   let person2 = document.querySelector(".person2");
+//   let person3 = document.querySelector(".person3");
+//   let person4 = document.querySelector(".person4");
+//   let item_person1 = document.querySelector(".item_person1");
+//   let item_person2 = document.querySelector(".item_person2");
+//   let item_person3 = document.querySelector(".item_person3");
+//   let item_person4 = document.querySelector(".item_person4");
 
-  person1.style.display = "flex";
+//   person1.style.display = "flex";
 
-  function abrirInfo(info) {
-    if (info.style.display !== "flex") {
-      info.style.display = "flex";
-    }
-  }
+//   function abrirInfo(info) {
+//     if (info.style.display !== "flex") {
+//       info.style.display = "flex";
+//     }
+//   }
 
-  function closeInfo(item) {
-    const infosPersons = document.querySelectorAll(".section3_person");
-    for (let i = 0; i < infosPersons.length; i++) {
-      if (infosPersons[i] !== item && infosPersons[i].style.display == "flex") {
-        infosPersons[i].style.display = "none";
-      }
-    }
-  }
+//   function closeInfo(item) {
+//     const infosPersons = document.querySelectorAll(".section3_person");
+//     for (let i = 0; i < infosPersons.length; i++) {
+//       if (infosPersons[i] !== item && infosPersons[i].style.display == "flex") {
+//         infosPersons[i].style.display = "none";
+//       }
+//     }
+//   }
 
-  item_person1.addEventListener("click", function () {
-    abrirInfo(person1);
-    closeInfo(person1);
-  });
-  item_person2.addEventListener("click", function () {
-    abrirInfo(person2);
-    closeInfo(person2);
-  });
-  item_person3.addEventListener("click", function () {
-    abrirInfo(person3);
-    closeInfo(person3);
-  });
-  item_person4.addEventListener("click", function () {
-    abrirInfo(person4);
-    closeInfo(person4);
-  });
-}
-
-function handleWindowSize() {
-  if (window.matchMedia("(min-width: 280px) and (max-width: 768px)").matches) {
-    setupPersons();
-  }
-}
-
-handleWindowSize();
-window.addEventListener("resize", handleWindowSize);
+//   item_person1.addEventListener("click", function () {
+//     abrirInfo(person1);
+//     closeInfo(person1);
+//   });
+//   item_person2.addEventListener("click", function () {
+//     abrirInfo(person2);
+//     closeInfo(person2);
+//   });
+//   item_person3.addEventListener("click", function () {
+//     abrirInfo(person3);
+//     closeInfo(person3);
+//   });
+//   item_person4.addEventListener("click", function () {
+//     abrirInfo(person4);
+//     closeInfo(person4);
+//   });
+// }
